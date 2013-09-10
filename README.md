@@ -93,3 +93,54 @@ COC
 OCO                          Draw
 OCO
 ```
+
+
+NOTE::
+
+I have used C++ language version 4.8.1 (gcc-4.8.1)
+if you want to compile online please use this link (Recommended)
+
+http://ideone.com/3CcnB8
+
+Below code works in three ways like 1. if Computer is in state of win or 2.   if in state of loose will try to protect
+3. if no one is winning then what is the best place to win in future.
+
+Let's if computer is in state of Win there is no problem.
+There may be conditions where Computer can't win the match but at least it can't let win the Opponent so,
+in this below code will try to find the place and where opponent can win it will put 'C' there because 
+it's computer's chance.
+
+let's for below exampl 
+XXC
+XOC
+XXO
+then computer will put 'C' at (0,0).
+
+otherwise if computer is in state of Win then there is no problem.
+
+one more Example like that 
+OCC
+OXC
+XXO        
+
+It Can Also solve if both opponent and computer are not in state of win
+then what is the best possible  place that computer can put 'C'
+for Example for input 
+COC
+XXX
+OXX
+out would be 
+COC
+XXX
+OXC
+
+
+and for  input 
+XOC
+XXO
+XCX
+ 
+output would be 
+XOC
+XXO
+CCX
