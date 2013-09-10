@@ -111,36 +111,45 @@ in this below code will try to find the place and where opponent can win it will
 it's computer's chance.
 
 let's for below exampl 
+```
 XXC
 XOC
 XXO
-then computer will put 'C' at (0,0).
+```
+then computer will put ```'C'``` at ```(0,0)```.
 
 otherwise if computer is in state of Win then there is no problem.
 
 one more Example like that 
+```
 OCC
 OXC
 XXO        
-
+```
 It Can Also solve if both opponent and computer are not in state of win
 then what is the best possible  place that computer can put 'C'
 for Example for input 
+```
 COC
 XXX
 OXX
+```
 out would be 
+```
 COC
 XXX
 OXC
-
+```
 
 and for  input 
+```
 XOC
 XXO
 XCX
- 
+ ```
 output would be 
+```
 XOC
 XXO
 CCX
+```
